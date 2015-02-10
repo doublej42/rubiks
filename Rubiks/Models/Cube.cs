@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -9,26 +10,24 @@ namespace Rubiks.Models
 {
     public class Cube
     {
-        private DataTable _sides;
 
-        public DataTable sides
+        protected Side front;
+
+        public Cube()
         {
-            get { return _sides; }
-            set { _sides = value; }
+            var side = new Side()
         }
 
-        public void RotateFlipType(Rotations direction)
+        public void Rotate(Rotations direction)
         {
             
         }
 
         public void Solve()
         {
-            RotateFlipType(Rotations.Middle);
+            Rotate(Rotations.Middle);
         }
     }
 
-    //Rotations are to the right or down
-    public enum Rotations {Top, Middle, Bottom, Left, Center, Right, Front, Inner, Back }
 
 }

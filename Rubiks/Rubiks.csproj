@@ -90,6 +90,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Cube.cs" />
+    <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\Side.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
